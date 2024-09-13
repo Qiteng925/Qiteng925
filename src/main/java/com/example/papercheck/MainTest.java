@@ -9,9 +9,9 @@ public class MainTest {
     public void mainTest() {
         String[] s = new String[3];
 
-        s[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
-        s[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_add.txt";
-        s[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        s[0] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        s[1] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/orig_0.8_add.txt";
+        s[2] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/ans.txt";
         String simHash0;
         String simHash1;
         String str0;
