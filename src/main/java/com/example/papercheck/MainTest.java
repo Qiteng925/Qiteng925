@@ -9,14 +9,14 @@ public class MainTest {
     public void mainTest() {
         String[] s = new String[3];
 
-        s[0] = "D:\\orig.txt";
-        s[1] = "D:\\orig_0.8_add.txt";
-        s[2] = "D:\\ans.txt";
+        s[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        s[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_add.txt";
+        s[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
         String simHash0;
         String simHash1;
         String str0;
         String str1;
-//        if (args.length < 3) return;
+        //if (args.length < 3) return;
         try {
             str0 = FileUtil.readFile(s[0]);
             str1 = FileUtil.readFile(s[1]);
@@ -40,7 +40,6 @@ public class MainTest {
         } catch (IOException e) {
         }
         System.out.println("计算结束，程序自动退出");
-        return;
     }
 
 }

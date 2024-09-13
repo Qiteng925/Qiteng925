@@ -10,6 +10,7 @@ public class Main {
         String str0;
         String str1;
         if (args.length < 3) return;
+        //处理异常
         try {
             str0 = FileUtil.readFile(args[0]);
             str1 = FileUtil.readFile(args[1]);
@@ -24,6 +25,7 @@ public class Main {
         simHash0 = SimHashUtil.getSimHash(str0);
         simHash1 = SimHashUtil.getSimHash(str1);
 
+        //计算相似度
         double similarity = SimHashUtil.getSimilarity(simHash0, simHash1);
         System.out.print("相似度: ");
         System.out.println(similarity);
@@ -33,7 +35,6 @@ public class Main {
         } catch (IOException e) {
         }
         System.out.println("计算结束，程序自动退出");
-        return;
     }
 
 }
