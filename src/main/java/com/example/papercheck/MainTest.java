@@ -5,13 +5,63 @@ import org.junit.Test;
 import java.io.IOException;
 
 public class MainTest {
-    @Test
-    public void mainTest() {
-        String[] s = new String[3];
 
-        s[0] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/orig.txt";
-        s[1] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/orig_0.8_add.txt";
-        s[2] = "/Users/yiyan/Desktop/3122004761.txt/src/main/java/com/example/papercheck/测试文本/ans.txt";
+    @Test
+    public void test01() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_add.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    @Test
+    public void test02() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_del.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    @Test
+    public void test03() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_dis_1.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    @Test
+    public void test04() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_dis_1.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    @Test
+    public void test05() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_dis_10.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    @Test
+    public void test06() {
+        String[] example = new String[3];
+        example[0] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig.txt";
+        example[1] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/orig_0.8_dis_15.txt";
+        example[2] = "/Users/yiyan/Desktop/3122004761/src/main/java/com/example/papercheck/测试文本/ans.txt";
+        mainTest(example);
+    }
+
+    public void mainTest(String[] example) {
+        String[] s = example;
         String simHash0;
         String simHash1;
         String str0;
@@ -41,5 +91,4 @@ public class MainTest {
         }
         System.out.println("计算结束，程序自动退出");
     }
-
 }
